@@ -35,8 +35,8 @@ Optional Protected [patient routes](src/routes/v1.js)
 (if want to persist patient information)
 
 <pre>
-GET   /api/               home (P.O.L.)
-GET   /api/:patient        get all patients
+GET   /api/                 home (P.O.L.)
+GET   /api/:patient         get all patients
 GET   /api/:patient/:id     get one patient
 POST  /api/:patient :       create one patient
 PUT   /api/:patient/:id     update one patient
