@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "lorenzoortega",
+    "password": null,
+    "database": "iCare",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "lorenzoortega",
+    "password": null,
+    "database": "test",
+    "host": "127.0.0.1",
+    "dialect": "sqlite:memory"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "iCare",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
