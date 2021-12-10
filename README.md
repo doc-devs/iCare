@@ -19,7 +19,7 @@ Urgent care patient queue system
 Where user : Nurse, Doctor, Admin
 
 <pre>
-GET   /               home (P.O.L.)
+GET   /userPortal     home (P.O.L.)
 POST  /signup         create a user
 POST  /signin         signin with basic auth
 GET   /users          retrieve all users, need permissions
@@ -31,11 +31,11 @@ Optional Protected [patient routes](src/routes/v1.js)
 
 <pre>
 GET   /               home (P.O.L.)
-GET   /:patient        get all patients
-GET   /:patient/:id     get one patient
-POST  /:patient :       create one patient
-PUT   /:patient/:id     update one patient
-DEL   /:patient/:id     delete one patient
+GET   /api/:patient        get all patients
+GET   /api/:patient/:id     get one patient
+POST  /api/:patient :       create one patient
+PUT   /api/:patient/:id     update one patient
+DEL   /api/:patient/:id     delete one patient
 </pre>
 
 ## Project Description

@@ -8,7 +8,7 @@ const basicAuth = require('./middleware/basic.js')
 const bearerAuth = require('./middleware/bearer.js')
 const permissions = require('./middleware/acl.js')
 
-authRoute.get('/', getHandler.handleGetHome );
+authRoute.get('/userPortal', getHandler.handleGetHome );
 
 authRoute.post('/signup', getHandler.handlePostSignUp );
 
