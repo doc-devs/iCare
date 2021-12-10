@@ -7,8 +7,7 @@ Urgent care patient queue system
 Deployment (WIP):
 
 app home: [Heroku](https://ii-care.herokuapp.com/api)
-
-user portal: [Heroku](https://ii-care.herokuapp.com/userPortal)
+user portale: [Heroku](https://ii-care.herokuapp.com/userPortal)
 
 ## Team members
 
@@ -38,7 +37,7 @@ Optional Protected [patient routes](src/routes/v1.js)
 (if want to persist patient information)
 
 <pre>
-GET   /api                  home (P.O.L.)
+GET   /api                     home (P.O.L.)
 GET   /api/:patient         get all patients
 GET   /api/:patient/:id     get one patient
 POST  /api/:patient :       create one patient
@@ -62,4 +61,4 @@ Feature Tasks:
 
 ## Software Requirements
 
-Click [Here](./requirements.md)
+[click Here](./requirements.md)
