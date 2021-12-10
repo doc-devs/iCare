@@ -1,5 +1,6 @@
 'use strict';
 
+const welcome2 = require('./terminal/welcome2')
 const express = require('express');
 const cors = require('cors');
 const notFoundHandler = require('./error-handlers/404.js');
@@ -13,6 +14,7 @@ app.use(express.json());
 
 app.use(userRoutes);
 app.use('/api', v1Routes);
+// app.use('/api/v2', v2Routes);
 
 app.use('*', notFoundHandler);
 app.use(errorHandler);
@@ -23,6 +25,7 @@ module.exports = {
     if (!port) { throw new Error('Missing Port'); }
     app.listen(port, async () => {
       console.log(`Listening on ${port}`)
+      welcome2();
     }
     );
   },
