@@ -2,7 +2,6 @@
 
 const base64 = require('base-64');
 const { users } = require('../../models/index');
-const welcome2 = require('../../terminal/welcome2');
 
 module.exports = async (req, res, next) => {
 
@@ -16,7 +15,6 @@ module.exports = async (req, res, next) => {
     next();
   } catch (e) {
     console.log('\nInvalid login. Try again! (from basic.js catch block)');
-    welcome2();
   }
 
 }
