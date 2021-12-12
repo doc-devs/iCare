@@ -15,6 +15,7 @@ module.exports = async (req, res, next) => {
     next();
   } catch (e) {
     console.log('\nInvalid login. Try again! (from basic.js catch block)');
+    res.status(409).send('Invalid login, please try again');
   }
 
 }
