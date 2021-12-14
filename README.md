@@ -2,7 +2,6 @@
 
 Urgent care patient queue system
 
-DATABASE_URL=postgres://ycbveugnbptrih:4058305cdf9d8bfbadc236efb196af15f7381f77c889ff3a0136d093fcc480be@ec2-52-200-188-218.compute-1.amazonaws.com:5432/d3bfsa0ld2pa90
 ##
 
 Deployment (WIP):
