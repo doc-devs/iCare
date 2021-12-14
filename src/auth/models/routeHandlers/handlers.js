@@ -17,7 +17,6 @@ const handlePostSignUp = async (req, res, next) => {
     };
     res.status(201).json(newUser);
   } catch (e) {
-    console.log('failed at handlePostSignup');
     res.status(409).send('Sorry, this username is taken. Please try again.');
   }
 }
@@ -30,7 +29,6 @@ const handlePostSignIn = (req, res, next) => {
     };
     res.status(200).json(user);
   } catch (e) {
-    console.error(e.message);
     res.status(409).send('Invalid login, please try again');
   }
 }

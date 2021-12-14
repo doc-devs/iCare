@@ -30,7 +30,7 @@ describe('Auth Middleware', () => {
   }
   const next = jest.fn();
 
-  describe('user authentication', () => {
+  xdescribe('user authentication', () => {
 
     it('fails a login for a user (admin) with an incorrect token', () => {
 
@@ -46,7 +46,7 @@ describe('Auth Middleware', () => {
 
     });
 
-    xit('logs in a user with a proper token', () => {
+    it('logs in a user with a proper token', () => {
 
       const user = { username: 'admin' };
       const token = jwt.sign(user, process.env.SECRET);

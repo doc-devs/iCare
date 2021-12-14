@@ -2,12 +2,9 @@
 
 Urgent care patient queue system
 
-##
+## Deployments
 
-Deployment (WIP):
-
-app home: [Heroku](https://ii-care.herokuapp.com/api)
-user portale: [Heroku](https://ii-care.herokuapp.com/userPortal)
+dev: [Heroku](https://ii-care.herokuapp.com/userPortal)
 
 ## Team members
 
@@ -17,7 +14,7 @@ user portale: [Heroku](https://ii-care.herokuapp.com/userPortal)
 
 ## Domain Modeling
 
-![uml](/images/uml.jpeg)
+![uml](/images/iCare3.jpg)
 
 ## Routes
 
