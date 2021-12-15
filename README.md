@@ -1,13 +1,10 @@
-# iCare
+# iCare [![.github/workflows/js-tests.yml](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml/badge.svg)](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml)
 
 Urgent care patient queue system
 
-##
+## Deployments
 
-Deployment (WIP):
-
-app home: [Heroku](https://ii-care.herokuapp.com/api)
-user portale: [Heroku](https://ii-care.herokuapp.com/userPortal)
+dev: [Heroku](https://ii-care.herokuapp.com/userPortal)
 
 ## Team members
 
@@ -17,7 +14,7 @@ user portale: [Heroku](https://ii-care.herokuapp.com/userPortal)
 
 ## Domain Modeling
 
-![uml](/images/uml.jpeg)
+![uml](/images/iCare3.jpg)
 
 ## Routes
 

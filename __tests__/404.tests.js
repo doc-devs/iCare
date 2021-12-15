@@ -13,7 +13,7 @@ afterAll(async () => {
   await db.drop()
 });
 
-describe('web server can Client errors on a Resourse Not Found Error', () => {
+describe('web server can Client errors on a Resourse Not Found', () => {
   it('can respond with a 404 on an invalid http method', async () => {
     const response = await request.put('/api')
     expect(response.status).toBe(404)

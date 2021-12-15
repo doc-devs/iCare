@@ -1,7 +1,34 @@
 'use strict'
+const { server, start } = require('../src/server')
+const userRoutes = require('../src/auth/authRoute')
 
-const { server } = require('../src/server')
+beforeEach(() => {
+  jest.resetModules();
+});
 
-xdescribe('server is able to start on an assigned port', () => {
-  it('server is able to listen to requests', async () => {})
-} )
+// const useSpy = jest.fn();
+// const listenSpy = jest.fn();
+
+// jest.doMock('../src/server', () => {
+//   return () => ({
+//     use: useSpy,
+//     listen: listenSpy,
+//   })
+// });
+
+xdescribe('should test server listen and use properties',()=>{
+  
+  test('should call listen fn', () => {
+    jest.doMock('../src/server', () => {
+      return jest.fn()
+    });
+    const port = 8000
+    console.log('**',server.listen())
+    expect(server.listen()).toHaveBeenCalledWith(start(port))
+
+  });
+
+  xtest('use router', () => {
+    // expect(useSpy).toHaveBeenCalledWith(userRoutes);
+  });
+})
