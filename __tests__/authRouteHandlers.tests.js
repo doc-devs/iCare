@@ -31,7 +31,6 @@ describe('can successfully perform CRUD using auth route handlers', () => {
     expect(res.status).toEqual(201)
     expect(res.body.user.username).toEqual('admin')
     expect(res.body.user.role).toEqual('admin')
-    expect(res.body.token).toBeDefined()
   })
 
   it('can catch an error when Create an new user on a POST /signup', async () => {
@@ -45,19 +44,18 @@ describe('can successfully perform CRUD using auth route handlers', () => {
     expect(res.status).toEqual(409)
   })
  
-   it('can POST returning user credentials on a POST /signin', async () => {
-    const response = await mockRequest.post('/signin').auth('admin','password')
-    expect(response.status).toEqual(200)
-    expect(response.body.user.username).toEqual('admin')
-    expect(response.body.user.role).toEqual('admin')
-    expect(response.body.token).toBeDefined()
-   })
+  it('can POST returning user credentials on a POST /signin', async () => {
+  const response = await mockRequest.post('/signin').auth('admin','password')
+  expect(response.status).toEqual(200)
+  expect(response.body.user.username).toEqual('admin')
+  expect(response.body.user.role).toEqual('admin')
+  })
 
-   it('can catch an error when POST returning user credentials on a POST /signin', async () => {
-    const res = await mockRequest.post('/signin').auth('admi','password')
+  it('can catch an error when POST returning user credentials on a POST /signin', async () => {
+  const res = await mockRequest.post('/signin').auth('admi','password')
 
-    expect(res.status).toEqual(409)
-    expect(res.text).toEqual('Invalid login, please try again')
-   })
+  expect(res.status).toEqual(409)
+  expect(res.text).toEqual('Invalid login, please try again')
+  })
 
 })
