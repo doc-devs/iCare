@@ -1,4 +1,4 @@
-# iCare
+# iCare [![.github/workflows/js-tests.yml](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml/badge.svg)](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml)
 
 Urgent care patient queue system
 
