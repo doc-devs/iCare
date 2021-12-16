@@ -1,7 +1,8 @@
 [![Website](https://img.shields.io/website?down_color=yellow&down_message=offline&label=iCare&logoColor=black&up_color=green&up_message=online&url=https%3A%2F%2Fii-care.herokuapp.com%2FuserPortal)](https://ii-care.herokuapp.com/userPortal) [![.github/workflows/js-tests.yml](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml/badge.svg)](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml) [![GitHub deployments](https://img.shields.io/github/deployments/doc-devs/iCare/ii-care?label=deployed&logo=heroku)](https://ii-care.herokuapp.com/userPortal) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/doc-devs/iCare/dev) [![GitHub](https://img.shields.io/github/license/doc-devs/iCare)](https://github.com/doc-devs/iCare/blob/22c1cac3b593d652020aa564590cc729ebd28426/LICENSE) [![GitHub](https://img.shields.io/badge/documentation-yes-blue)](https://github.com/doc-devs/iCare)
 
-<h1 align="center"> Welcome to iCare </h1>
+<h1 align="center"> Welcome to</h1>
 
+![logo](./images/logo.png)
 > An Urgent Care Patient Queue System
 
 #### Project Description
