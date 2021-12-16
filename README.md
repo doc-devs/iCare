@@ -1,52 +1,42 @@
-# iCare [![.github/workflows/js-tests.yml](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml/badge.svg)](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml)
+[![Website](https://img.shields.io/website?down_color=yellow&down_message=offline&label=iCare&logoColor=black&up_color=green&up_message=online&url=https%3A%2F%2Fii-care.herokuapp.com%2FuserPortal)](https://ii-care.herokuapp.com/userPortal) [![.github/workflows/js-tests.yml](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml/badge.svg)](https://github.com/doc-devs/iCare-V2/actions/workflows/js-tests.yml) [![GitHub deployments](https://img.shields.io/github/deployments/doc-devs/iCare/ii-care?label=deployed&logo=heroku)](https://ii-care.herokuapp.com/userPortal) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/doc-devs/iCare/dev) [![GitHub](https://img.shields.io/github/license/doc-devs/iCare)](https://github.com/doc-devs/iCare/blob/22c1cac3b593d652020aa564590cc729ebd28426/LICENSE) [![GitHub](https://img.shields.io/badge/documentation-yes-blue)](https://github.com/doc-devs/iCare)
 
-Urgent care patient queue system
+<h1 align="center"> Welcome to iCare </h1>
 
-## Deployments
+> An Urgent Care Patient Queue System
 
-dev: [Heroku](https://ii-care.herokuapp.com/userPortal)
+#### Project Description
 
-## Team members
+An app that can be used by front desk RN of an emergency department to accept and assign walk-in patients into queues based on priority of their symptoms.
+
+#### Team members
 
 - Lorenzo Ortega
 - Ayrat Gimranov
 - Mark Thanadabouth
 
-## Domain Modeling
+#### Domain Modeling
 
-![uml](/images/iCare3.jpg)
+![uml](/images/iCare.jpg)
 
-## Routes
+#### Deployments
 
-[authRoutes](src/auth/authRoute.js)
+🏠 [GitHub Organization Home](https://github.com/doc-devs)
 
-Where user : Nurse, Doctor, Admin
+💻 [iCare User Interface](https://github.com/doc-devs/TerminalUI)
+
+💻 [iCare Server](https://github.com/doc-devs/iCare)
+
+#### [Routes](src/auth/authRoute.js)
+
+Where a User is a Nurse or Doctor
 
 <pre>
-GET   /userPortal     home (P.O.L.)
+GET   /userPortal     home
 POST  /signup         create a user
 POST  /signin         signin with basic auth
-GET   /users          retrieve all users, need permissions
-DEL   /users          delete one users, need permissions
 </pre>
 
-Optional Protected [patient routes](src/routes/v1.js)
-(if want to persist patient information)
-
-<pre>
-GET   /api                     home (P.O.L.)
-GET   /api/:patient         get all patients
-GET   /api/:patient/:id     get one patient
-POST  /api/:patient :       create one patient
-PUT   /api/:patient/:id     update one patient
-DEL   /api/:patient/:id     delete one patient
-</pre>
-
-## Project Description
-
-An app that can be used by front desk RN of an emergency department to accept and assign walk-in patients into queues based on priority of their symptoms.
-
-## User Stories
+#### User Stories
 
 Feature Tasks:
 
@@ -56,6 +46,60 @@ Feature Tasks:
 - " As a Physician, I want to process patients based on priority-level, so that I can create a treat-plan "
 - " As a Nurse, I want to be able to move patients to another queue, so that if the patient's condition worsens they can be seen faster"
 
-## Software Requirements
+#### Software Requirements
 
-[click Here](./requirements.md)
+[click here](./requirements.md) for software requirements
+
+[Vision](./requirements.md##Vision)
+[Scope](./requirements.md##Scope(In/Out))
+[MVP](./requirements.md##MinimumViableProduct)
+[Functional Requirements](./requirements.md##FunctionalRequirements)
+[Non-Functional Requirements](./requirements.md##Non-FunctionalRequirements)
+[Data Flow](./requirements.md##DataFlow)
+
+#### Install
+
+```sh
+npm install
+```
+
+#### Usage
+
+```sh
+npm run dev
+```
+
+#### Run tests
+
+```sh
+npm run test
+```
+
+#### Authors
+
+👤 **antoni909**
+
+* Github: [@antoni909](https://github.com/antoni909)
+* LinkedIn: [personal profile](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/lorenzo-ortega-antoni\/)
+
+👤 **ag961**
+
+* Github: [ag961](#blank)
+* LinkedIn: [personal profile](https://www.linkedin.com/in/ayrat-gimranov/)
+
+👤 **markjackson28**
+
+* Github: [markjackson28]()
+* LinkedIn: [personal profile](https://www.linkedin.com/in/markjackson28/)
+
+#### 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+<br />Feel free to check [issues page](https://github.com/doc-devs/iCare/issues)
+
+#### Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
